@@ -5,19 +5,21 @@ import { propTypes } from "react-bootstrap/esm/Image";
 
 export const Cards = props => {
 	return (
-		<Card style={{ width: "18rem" }} className="col-2">
-			<Card.Img variant="top" src="holder.js/100px180" />
+		<Card style={{ width: "18rem" }} className="col-2 m-3">
+			<Card.Img variant="top" src="holder.js/400px200" />
 			<Card.Body>
-				<Card.Title>{props.item}</Card.Title>
-				<Card.Text>
-					Some quick example text to build on the card title and make up the bulk of the cards content.
-				</Card.Text>
-				<Button variant="primary">Go somewhere</Button>
+				<Card.Title>{props.title}</Card.Title>
+				<Card.Text>{props.body}</Card.Text>
+				<Button variant="outline-primary">Learn More!</Button>
+				<Button variant="outline-warning" className="float-right">
+					<i className="far fa-heart" />
+				</Button>
 			</Card.Body>
 		</Card>
 	);
 };
 
 Cards.propTypes = {
-	item: PropTypes.string
+	title: PropTypes.string,
+	body: PropTypes.string
 };

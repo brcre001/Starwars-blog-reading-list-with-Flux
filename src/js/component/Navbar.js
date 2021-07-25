@@ -4,10 +4,11 @@ import { DropdownButton, Dropdown } from "react-bootstrap";
 
 export const Navbar = () => {
 	return (
-		<nav className="navbar navbar-dark bg-dark mb-3">
+		<nav className="navbar navbar-dark bg-dark">
 			<Link to="/">
 				<span className="navbar-brand mb-0 h1">
-					<i className="fas fa-jedi" /> STARWARS
+					<i className="fas fa-jedi" />
+					STARWARS
 				</span>
 			</Link>
 			<div className="ml-auto">
